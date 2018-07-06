@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <title>Só de Cenoura Garçom</title>
+    <link rel="stylesheet" href="icons/material.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+
+<body>
+	<div class="topo-fixo z-depth-2">
+   		<div class="valign-wrapper yellow darken-4 white-text">
+     		<h5 class="titulo">Só de Cenoura</h5>
+            <i class="material-icons waves-effect waves-light waves-circle scan-qrcode">camera</i>
+       		<i class="material-icons waves-effect waves-light waves-circle dropdown-button"
+                data-activates="submenu"
+                data-gutter="5"
+                data-constrainwidth="false">
+                more_vert
+            </i>
+
+                <ul id="submenu" class="dropdown-content">
+                    <li><a class="black-text acao-limpar">Limpar</a></li>
+                    <li><a class="black-text vibra-kiki" onclick="Materialize.toast(' 2CTI - Douglas Figueiredo  -  RA: 17428 ', 4500)">Sobre</a></li>
+                </ul>
+        </div>
+
+        <ul class="tabs yellow darken-4">
+            <li class="tab">
+                <a href="#bolos" class="white-text waves-effect waves-light">Bolos</a>
+      	    </li>
+       	
+            <li class="tab">
+         	    <a href="#bebidas" class="white-text waves-effect waves-light">Bebidas</a>
+            </li>
+    	</ul>
+    </div>
+    
+
+    <div class="section" id="bolos">
+        <h6 class="container brown-text">Fatia</h6>
+        <div class="collection">
+           	<a class="collection-item waves-effect black-text"
+                onclick="Materialize.toast('Só de Cenoura', 2000)">Só de Cenoura</a>
+        	<a class="collection-item waves-effect black-text"
+                onclick="Materialize.toast('Com Nutella', 2000)">Com Nutella</a>
+        	<a class="collection-item waves-effect black-text"
+                onclick="Materialize.toast('De Brigadeiro', 2000)">De Brigadeiro</a>
+        	<a class="collection-item waves-effect black-text"
+                onclick="Materialize.toast('Açucarado', 2000)">Açucarado</a>
+        </div>
+
+        <h6 class="container brown-text">Inteiros</h6>
+        <div class="collection">
+            <a class="collection-item waves-effect black-text"
+                onclick="Materialize.toast('Só de Cenoura', 2000)">Só de Cenoura</a>
+            <a class="collection-item waves-effect black-text"
+                onclick="Materialize.toast('Com Nutella', 2000)">Com Nutella</a>
+            <a class="collection-item waves-effect black-text"
+                onclick="Materialize.toast('De Brigadeiro', 2000)">De Brigadeiro</a>
+            <a class="collection-item waves-effect black-text"
+                onclick="Materialize.toast('Açucarado', 2000)">Açucarado</a>
+        </div>
+    </div>
+    
+
+    <div class="section" id="bebidas">
+        <h6 class="container brown-text">Cafés</h6>
+        <div class="collection">
+            <a class="collection-item waves-effect black-text"
+                onclick="Materialize.toast('Expresso', 2000)">Expresso</a>              
+            <a class="collection-item waves-effect black-text"
+                onclick="Materialize.toast('Cappuccino', 2000)">Cappuccino</a>
+            <a class="collection-item waves-effect black-text"
+                onclick="Materialize.toast('Mocaccino', 2000)">Mocaccino</a>
+        </div>
+  
+    
+        <h6 class="container brown-text">Refrigerantes</h6>
+        <div class="collection">
+            <a class="collection-item waves-effect black-text"
+                onclick="Materialize.toast('Soda', 2000)">Soda</a>
+            <a class="collection-item waves-effect black-text"
+                onclick="Materialize.toast('Guaraná', 2000)">Guaraná</a>
+            <a class="collection-item waves-effect black-text"
+                onclick="Materialize.toast('Coca-Cola', 2000)">Coca-Cola</a>
+        </div>
+
+
+        <h6 class="container brown-text">Sucos</h6>
+        <div class="collection">
+            <a class="collection-item waves-effect black-text"
+                onclick="Materialize.toast('Limão', 2000)">Limão</a>
+            <a class="collection-item waves-effect black-text"
+                onclick="Materialize.toast('Laranja', 2000)">Laranja</a>
+            <a class="collection-item waves-effect black-text"
+                onclick="Materialize.toast('Tamarindo', 2000)">Tamarindo</a>
+        </div>
+    </div>
+
+    <div class="fixed-action-btn">
+        <a href="#confirmacao" id="confirmar" 
+            class="btn-floating btn-large waves-effect waves-light brown modal-trigger">
+        <i class="material-icons">done</i></a>
+    </div>
+
+    <div id="confirmacao" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h5>Resumo do pedido: </h5>
+            <input id="numero-mesa" type="number"
+                class="validate" placeholder="Número da mesa: ">
+                <blockquote id="resumo"></blockquote>
+        </div>
+
+        <div class="modal-footer">
+            <button class="btn deep-orange waves-effect waves-light modal-close acao-finalizar">
+                Pedir
+            </button>
+
+            <button class="btn-flat waves-effect waves-light modal-close acao-limpar">
+                Cancelar
+            </button>
+        </div>
+    <script src="cordova.js"></script>
+    <script src="js/jquery.min.js"> </script>
+    <script src="js/materialize.min.js"> </script>
+    <script src="js/app.js"> </script>
+</body>
+</html>
